@@ -1,6 +1,7 @@
 <?php
 
 require_once "src/Classes/Produto.php";
+require_once "src/Classes/Cliente.php";
 
 $prod1 = new Produto;
 $prod1->titulo = "Skol";
@@ -14,3 +15,11 @@ $prod2->preco = 1.90;
 
 var_dump($prod1);
 var_dump($prod2);
+
+$cli = new Cliente;
+$cli->nome = "João";
+$cli->idade = 40;
+$cli->endereco = "São Paulo";
+$cli->telefone = '(11) XXXX-XXXX';
+
+$cli->comprar();
