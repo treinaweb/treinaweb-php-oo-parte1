@@ -9,4 +9,14 @@ class Produto
     public $descricao = "Cerveja Brasileira";
 
     public $preco;
+
+    public function defineCodigoBarras($codigo)
+    {
+        $this->codigoBarras = $codigo;
+    }
+
+    public function acessaCodigoBarras()
+    {
+        echo "<br>" . $this->codigoBarras;
+    }
 }
