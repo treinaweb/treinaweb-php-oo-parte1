@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 class Fornecedor 
 {
     public const PAIS = "Brasil";
