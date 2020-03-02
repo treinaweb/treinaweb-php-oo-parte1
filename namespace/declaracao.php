@@ -3,11 +3,11 @@
 require_once "../src/Email/Envio.php";
 require_once "../src/SMS/Envio.php";
 
-$email = new \Email\Envio;
-$sms = new \SMS\Envio;
+$email = new \App\Email\Envio;
+$sms = new \App\SMS\Envio;
 
-echo \Email\VERSAO . "<br>";
+echo \App\Email\VERSAO . "<br>";
 
-\Email\validar("elton.fonseca@treinaweb.com.br");
+\App\Email\validar("elton.fonseca@treinaweb.com.br");
 
 var_dump($email, $sms);

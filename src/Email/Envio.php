@@ -1,6 +1,6 @@
 <?php
 
-namespace Email;
+namespace App\Email;
 
 const VERSAO = 1.0;
 
