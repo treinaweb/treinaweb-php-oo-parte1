@@ -2,20 +2,20 @@
 
 class Cliente
 {
-    public $nome;
+    public string $nome;
 
-    public $idade;
+    public int $idade;
 
-    public $endereco;
+    public string $endereco;
 
-    public $telefone;
+    public string $telefone;
 
-    public function comprar()
+    public function comprar(): void
     {
         echo "O cliente {$this->nome} realizou uma compra";
     }
 
-    public function definirNome($nome)
+    public function definirNome(string $nome): void
     {
         $this->nome = $nome;
     }

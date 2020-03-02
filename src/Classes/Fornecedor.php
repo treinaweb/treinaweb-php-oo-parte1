@@ -4,13 +4,13 @@ class Fornecedor
 {
     public const PAIS = "Brasil";
 
-    public $razaoSocial;
+    public string $razaoSocial;
 
-    public $nomeFantasia;
+    public string $nomeFantasia;
 
-    public $cnpj;
+    public string $cnpj;
 
-    public function autorizar($usuario)
+    public function autorizar(object $usuario): void
     {
         if ($usuario->nome == "joao" && $usuario->senha == "123456") {
             echo "<br> Autorizado";

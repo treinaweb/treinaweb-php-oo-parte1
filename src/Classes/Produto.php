@@ -4,18 +4,18 @@ class Produto
 {
     public const NORMA = "1050";
 
-    public $titulo;
+    public string $titulo;
 
-    public $descricao = "Cerveja Brasileira";
+    public string $descricao = "Cerveja Brasileira";
 
-    public $preco;
+    public float $preco;
 
-    public function defineCodigoBarras($codigo)
+    public function defineCodigoBarras(string $codigo): void
     {
         $this->codigoBarras = $codigo;
     }
 
-    public function acessaCodigoBarras()
+    public function acessaCodigoBarras(): void
     {
         echo "<br>" . $this->codigoBarras;
     }
