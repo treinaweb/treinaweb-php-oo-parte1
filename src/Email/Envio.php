@@ -2,13 +2,16 @@
 
 namespace App\Email;
 
+use App\Email\Adaptadores\Mailgun\Adaptador as Mailgun;
+use App\Email\Adaptadores\SES\Adaptador as SES;
+
 const VERSAO = 1.0;
 
 class Envio 
 {
     public function enviar(): void
     {
-        $adaptador = new Adaptadores\Mailgun\Adaptador;
+        $adaptador = new Mailgun;
 
         $transporte = new Transporte;
 
@@ -18,6 +21,16 @@ class Envio
         \var_dump($adaptador, $transporte, $obj, $cli);
 
         var_dump($adaptador, $transporte, $obj, $cli);
+    }
+
+    public function m1()
+    {
+        $adaptador = new Mailgun;
+    }
+
+    public function m2()
+    {
+        $adaptador = new SES;
     }
 }
 
