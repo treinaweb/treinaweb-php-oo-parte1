@@ -1,6 +1,8 @@
 <?php
 
-class SMS_Envio 
+namespace SMS;
+
+class Envio 
 {
     
 }

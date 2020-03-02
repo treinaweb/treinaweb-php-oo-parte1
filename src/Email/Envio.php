@@ -1,6 +1,8 @@
 <?php
 
-class Email_Envio 
+namespace Email;
+
+class Envio 
 {
     
 }
