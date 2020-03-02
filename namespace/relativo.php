@@ -1,6 +1,7 @@
 <?php
 
 require_once "../src/Email/Envio.php";
+require_once "../src/Classes/Cliente.php";
 require_once "../src/Email/Transporte.php";
 require_once "../src/Email/Adaptadores\Mailgun\Adaptador.php";
 
