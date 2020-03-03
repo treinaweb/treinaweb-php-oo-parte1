@@ -1,5 +1,7 @@
 <?php
 
+namespace App\Classes;
+
 class Produto 
 {
     public const NORMA = "1050";

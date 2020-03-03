@@ -2,6 +2,7 @@
 
 namespace App\Email;
 
+use App\Classes\Cliente;
 use App\Email\Adaptadores\Mailgun\Adaptador as Mailgun;
 use App\Email\Adaptadores\SES\Adaptador as SES;
 
@@ -16,7 +17,7 @@ class Envio
         $transporte = new Transporte;
 
         $obj = new \stdClass;
-        $cli = new \Cliente;
+        $cli = new Cliente;
 
         \var_dump($adaptador, $transporte, $obj, $cli);
 
