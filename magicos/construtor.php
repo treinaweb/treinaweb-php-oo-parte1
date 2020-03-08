@@ -13,4 +13,10 @@ $cli->alterar('Elton Fonseca', 29);
 
 $cli(false);
 
-var_dump($cli);
+$cliSerializado = serialize($cli);
+
+echo "<br>" . $cliSerializado;
+
+$cli2 = unserialize($cliSerializado);
+
+var_dump($cli, $cli2);
