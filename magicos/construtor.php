@@ -9,4 +9,8 @@ $cli->rg = '11.111.111.0';
 
 echo $cli->cidade;
 
+$cli->alterar('Elton Fonseca', 29);
+
+$cli(false);
+
 var_dump($cli);
