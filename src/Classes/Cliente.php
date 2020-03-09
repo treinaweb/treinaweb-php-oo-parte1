@@ -28,12 +28,12 @@ class Cliente
         }
     }
 
-    public function __get(string $nomePropriedade)
+    public function __get(string $nomePropriedade): string
     {
         return "A propriedade nao existe";
     }
 
-    public function __call(string $nomeMetodo, array $argumentosMetodo)
+    public function __call(string $nomeMetodo, array $argumentosMetodo): void
     {
         if  ($nomeMetodo === 'alterar') {
             $this->nome = $argumentosMetodo[0];
@@ -41,7 +41,7 @@ class Cliente
         }
     }
 
-    public function __invoke(bool $status)
+    public function __invoke(bool $status): void
     {
         $this->status = $status;
     }
