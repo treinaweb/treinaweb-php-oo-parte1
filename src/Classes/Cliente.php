@@ -56,6 +56,11 @@ class Cliente
         $this->tipo = "serializado";
     }
 
+    public function __tostring(): string
+    {
+        return $this->nome . ", " . $this->idade;
+    }
+
     public function comprar(): void
     {
         echo "O cliente {$this->nome} realizou uma compra";
